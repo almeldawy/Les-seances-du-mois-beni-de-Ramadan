@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Séances du mois de Ramadân — Cheikh Sâlih Al-Fawzân</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Amiri+Quran&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/theme.js"></script>
+</head>
+<body data-id="accueil" data-root="">
+<div class="top">
+  <button class="ib menu-b" id="bMenu" aria-label="Sommaire"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+  <div class="ttl" id="tHome">Séances du mois de Ramadân <small>— Cheikh Sâlih Al-Fawzân</small></div>
+  <button class="ib hide-s" id="fMinus" title="Réduire le texte">A−</button>
+  <button class="ib hide-s" id="fPlus" title="Agrandir le texte">A+</button>
+  <button class="ib" id="bChapBm" title="Marquer ce chapitre"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12v18l-6-4-6 4z"/></svg></button>
+  <button class="ib" id="bBm" title="Mes marque-pages"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12v18l-6-4-6 4z"/><path d="M9 8h6"/></svg><span id="bmCount" class="hide-s"></span></button>
+  <button class="ib" id="bTheme" title="Mode clair / sombre"></button>
+</div>
+<div class="pbar"><i id="pbar"></i></div>
+<nav class="side" id="side">
+  <div class="prog">
+    <div class="row"><span>Progression</span><span id="progTxt">0 %</span></div>
+    <div class="bar"><i id="progBar"></i></div>
+    <div class="row"><span id="progCnt"></span><button id="bReset">Réinitialiser</button></div>
+  </div>
+  <input id="q" type="search" placeholder="Filtrer le sommaire…">
+  <a class="it home cur" href="index.html"><span class="n">⌂</span><span class="t">Page d'accueil</span></a>
+  <div id="toc"></div>
+</nav>
+<div class="scrim" id="scrim"></div>
+<main><div class="wrap">
+<section class="cover" id="accueil">
+  <div class="orn">✦ ✦ ✦</div>
+  <div class="art" lang="ar" dir="rtl">مجالس شهر رمضان المبارك</div>
+  <h1>Les séances du mois béni de Ramadân</h1>
+  <div class="aut">suivies de <em>Ithâf Ahl al-Îmân bi-Durûs Chahr Ramadân</em><br>Cheikh Sâlih ibn Fawzân Al-Fawzân</div>
+  <div class="cta"><button class="btn on" id="bResume">Commencer la lecture</button><button class="btn" id="bBm2">Mes marque-pages</button></div>
+  <div class="books">
+    <div class="bk"><div class="a">مجالس شهر رمضان المبارك</div><h3>Partie I — Les séances du mois de Ramadân</h3><p>Trente séances prononcées à la mosquée durant Ramadân, transcrites à partir des enregistrements : exhortations, mérites du mois, du jeûne, du Coran, de la prière nocturne et de la Nuit du Destin.</p><a class="btn" href="chapitres/m00.html">Ouvrir la partie I</a></div>
+    <div class="bk"><div class="a">إتحاف أهل الإيمان بدروس شهر رمضان</div><h3>Partie II — Le présent aux gens de la foi</h3><p>Trente leçons sur les règles du jeûne, du rattrapage, des tarâwîh, de la zakât, de l'iʿtikâf et de l'aumône de la rupture, suivies d'une conclusion.</p><a class="btn" href="chapitres/d00.html">Ouvrir la partie II</a></div>
+  </div>
+  <div class="note"><strong>Présentation.</strong> Chaque citation coranique ou prophétique est donnée d'abord dans son texte arabe, dans un bloc séparé, puis dans sa traduction française ; le propos de l'auteur reprend ensuite dans un nouveau paragraphe. Les traductions des versets sont des traductions du sens. Les notes de l'éditeur arabe (références des hadiths) figurent en fin de chapitre.<br><strong>Marque-pages :</strong> survolez (ou touchez) un paragraphe et cliquez sur l'icône pour le marquer ; le bouton du haut marque le chapitre entier. Un chapitre est compté comme lu lorsque vous atteignez sa fin ou que vous cliquez sur « Marquer comme lu ».</div>
+</section>
+</div></main>
+<aside class="drawer" id="drawer"><header><span>Mes marque-pages</span><button class="ib" id="bClose">✕</button></header><div class="list" id="bmList"></div></aside>
+<div class="modal" id="modal"><div class="box"><h4>Réinitialiser la progression ?</h4><p>Les chapitres marqués comme lus et les positions de lecture seront effacés.</p><label><input type="checkbox" id="alsoBm"> Effacer aussi tous les marque-pages</label><div class="acts"><button class="btn" id="mNo">Annuler</button><button class="btn danger" id="mYes">Réinitialiser</button></div></div></div>
+<div class="toast" id="toast"></div>
+<script src="assets/toc.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

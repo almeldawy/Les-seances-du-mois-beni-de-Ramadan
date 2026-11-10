@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Introduction — Introduction de l&#x27;auteur</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Amiri+Quran&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/theme.js"></script>
+</head>
+<body data-id="d00" data-root="../">
+<div class="top">
+  <button class="ib menu-b" id="bMenu" aria-label="Sommaire"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+  <div class="ttl" id="tHome">Séances du mois de Ramadân <small>— Cheikh Sâlih Al-Fawzân</small></div>
+  <button class="ib hide-s" id="fMinus" title="Réduire le texte">A−</button>
+  <button class="ib hide-s" id="fPlus" title="Agrandir le texte">A+</button>
+  <button class="ib" id="bChapBm" title="Marquer ce chapitre"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12v18l-6-4-6 4z"/></svg></button>
+  <button class="ib" id="bBm" title="Mes marque-pages"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12v18l-6-4-6 4z"/><path d="M9 8h6"/></svg><span id="bmCount" class="hide-s"></span></button>
+  <button class="ib" id="bTheme" title="Mode clair / sombre"></button>
+</div>
+<div class="pbar"><i id="pbar"></i></div>
+<nav class="side" id="side">
+  <div class="prog">
+    <div class="row"><span>Progression</span><span id="progTxt">0 %</span></div>
+    <div class="bar"><i id="progBar"></i></div>
+    <div class="row"><span id="progCnt"></span><button id="bReset">Réinitialiser</button></div>
+  </div>
+  <input id="q" type="search" placeholder="Filtrer le sommaire…">
+  <a class="it home" href="../index.html"><span class="n">⌂</span><span class="t">Page d'accueil</span></a>
+  <div id="toc"></div>
+</nav>
+<div class="scrim" id="scrim"></div>
+<main><div class="wrap">
+<article class="chap" id="d00" data-part="2">
+<header class="chead"><div class="kicker">Introduction · <span class="pg">p. 127 de l'édition arabe</span></div>
+<h2>Introduction de l&#x27;auteur</h2><div class="artitle" lang="ar" dir="rtl">المقدمة</div></header>
+<div class="cbody"><h3 id="d00-p1" class="sub">Ithâf Ahl al-Îmân bi-Durûs Chahr Ramadân — « Le présent offert aux gens de la foi : leçons du mois de Ramadân »</h3>
+<p id="d00-p2"><em>Et, à la fin de l'ouvrage, des réponses de certains savants au sujet de la prière des tarâwîh et du tahajjud durant les dix dernières nuits, et du statut de l'invocation du qunût et de l'invocation de clôture (du Coran), en réfutation de ceux qui ont émis des doutes sur ces questions. — Par le Cheikh Dr Sâlih ibn Fawzân ibn ʿAbdillâh Al-Fawzân, membre du Comité permanent de la fatwa et du Conseil des grands savants. Édition corrigée et révisée.</em></p>
+<p id="d00-p3">La louange est à Allah, qui a légiféré pour Ses serviteurs le jeûne du mois de Ramadân et en a fait l'un des piliers de l'Islam. Et que la prière et le salut soient sur notre Prophète Muhammad, le meilleur de ceux qui ont prié et jeûné, ainsi que sur sa famille et ses Compagnons, les pieux, les nobles. Ceci dit…</p>
+<p id="d00-p4">Voici des leçons qui comportent un rappel des mérites de ce mois béni, une exhortation au sérieux et à l'effort en lui, et à la mise à profit de ses jours et de ses nuits, avec l'indication de certains statuts juridiques relatifs au jeûne et à la prière nocturne. J'ai eu pour but, en les écrivant, de me rappeler moi-même ainsi que mes frères, demandant à Allah qu'Il en fasse profiter celui qui les a écrites, celui qui les lit et celui qui les entend parmi les musulmans, et qu'Il me pardonne ce qui s'y trouve d'erreur ou de manquement…</p>
+<p id="d00-p5">Et qu'Allah prie sur notre Prophète Muhammad, sur sa famille et ses Compagnons, et leur accorde le salut…</p>
+<p class="sig" id="d00-p6">Sâlih ibn Fawzân ibn ʿAbdillâh Al-Fawzân</p></div>
+<footer class="cfoot"><button class="btn mark-read" data-id="d00">✓ Marquer comme lu</button><div class="pn"><a class="prev" href="m30.html">← Séance 30</a><a class="next" href="d01.html">Leçon 1 →</a></div></footer>
+</article>
+</div></main>
+<aside class="drawer" id="drawer"><header><span>Mes marque-pages</span><button class="ib" id="bClose">✕</button></header><div class="list" id="bmList"></div></aside>
+<div class="modal" id="modal"><div class="box"><h4>Réinitialiser la progression ?</h4><p>Les chapitres marqués comme lus et les positions de lecture seront effacés.</p><label><input type="checkbox" id="alsoBm"> Effacer aussi tous les marque-pages</label><div class="acts"><button class="btn" id="mNo">Annuler</button><button class="btn danger" id="mYes">Réinitialiser</button></div></div></div>
+<div class="toast" id="toast"></div>
+<script src="../assets/toc.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>
